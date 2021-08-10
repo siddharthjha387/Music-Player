@@ -2,7 +2,7 @@
 
 let isPlaying = false;
 var songindex=0;
-var size=document.querySelectorAll(".btn").length;
+var size=document.querySelectorAll(".drum").length;
 var song=document.querySelector("audio");
 for(let i=0;i<size;i++)
 document.querySelectorAll("button")[i].addEventListener("click",function(){
@@ -108,10 +108,8 @@ function loadsongs(information){
   document.querySelector("audio").src=information.music;
   playmusic();
 }
-//
-// app.listen(process.env.PORT || 3000, function (req, res) {
-//   console.log("Server is running on Port 3000");
-// });
+
+
 // var title=
 // var artist=document.getElementById("artist");
 // var title=document.getElementById("title");
